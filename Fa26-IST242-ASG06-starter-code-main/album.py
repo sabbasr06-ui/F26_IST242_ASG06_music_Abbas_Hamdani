@@ -9,17 +9,21 @@ Key concepts to implement:
     rather than keeping a second field in sync.
 """
 class Album:
-    def __init__(self, title, years):
+    def __init__(self, title, active, years):
         if not years:
             raise ValueError("years list cannot be empty")
 
-        self.title = title
+        self._title = title
         self._active = active
         self._years = years.copy()  
 
     @property
     def title(self):
         return self._title
+
+    @property
+    def active(self):
+        return self._active
 
     @property
     def debut_year(self):
