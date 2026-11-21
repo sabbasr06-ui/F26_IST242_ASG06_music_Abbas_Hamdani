@@ -25,3 +25,13 @@ artist = Artist("Kendrick Lamar", "Hip-Hop")
 print(artist.name)  # Output: Kendrick Lamar
 print(artist.genre)  # Output: Hip-Hop
 print(artist)  # Output: Kendrick Lamar (Hip-Hop)
+
+from album import Album
+
+album = Album("DAMN.", True, [2017, 2018])
+
+print(album.title)  # Output: DAMN.
+print(album.debut_year)  # Output: 2017
+print(album.years)  # Output: [2017, 2018]
+print(album.active)  # Output: True
+print(album)  # Output: DAMN. active = True,  debut year: 2017
