@@ -18,3 +18,10 @@ After sorting:
 (Sarah Koenig, Journalism) Serial active = False,  debut year: 2014, duration: 01:30:00 is explicit: False
 (Kendrick Lamar, Hip-Hop) DAMN. active = True,  debut year: 2017, duration: 03:40
 """
+from artist import Artist
+
+artist = Artist("Kendrick Lamar", "Hip-Hop")
+
+print(artist.name)  # Output: Kendrick Lamar
+print(artist.genre)  # Output: Hip-Hop
+print(artist)  # Output: Kendrick Lamar (Hip-Hop)
